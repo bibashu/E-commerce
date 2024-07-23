@@ -1,10 +1,10 @@
+function Button({ onClickHandler, value, title }) {
 
-
- function Button() {
   return (
-    <div>
-      Buttons
+    <div onClick={onClickHandler} value={value} className="btns">
+      {title}
+      
     </div>
-  )
+  );
 }
-export default Button
+export default Button;

@@ -1,10 +1,14 @@
-import "./Products.css"
 
- function Products() {
+import "./Products.css";
+import Card from "../components/Card";
+function Products({result}) {
   return (
-    <div>
-      Products
-    </div>
-  )
+    <>
+      <section class="card-container">
+ 
+       {result}
+      </section>
+    </>
+  );
 }
-export default Products
+export default Products;
